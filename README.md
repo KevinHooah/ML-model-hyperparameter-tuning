@@ -1,6 +1,6 @@
 # Common machine learning models' hyperparameter tuning
 
-This repo is for a collection of hyper-parameter tuning for "common: machine learning models, including:\
+This repo is for a collection of hyper-parameter tuning for "common" machine learning models, including:
 * Linear SVM (Grid Search),
 * RBF-Kernel SVM (Grid Search),
 * Radom Forest (Bayesian Optimization),
