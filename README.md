@@ -18,8 +18,8 @@ Recommended Packages:\
 * scikit-learn              1.0.1
 * xgboost                   1.5.1
 
-If you are using an Intel chip, you may need this to accelerate the computing:
-scikit-learn-intelex      2021.2.2\
+If you are using an Intel chip, you may need this to accelerate the computing:\
+* scikit-learn-intelex      2021.2.2
 
-If you want to use the Bayesian Optimization, you need install this package:
-hyperopt                  0.2.7\
+If you want to use the Bayesian Optimization, you need install this package:\
+* hyperopt                  0.2.7
