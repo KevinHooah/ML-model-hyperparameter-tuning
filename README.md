@@ -9,7 +9,8 @@ This repo is for a collection of hyper-parameter tuning for "common" machine lea
 * k-Nearest Neighbors (Grid Search),
 * Extra Trees (Bayesian Optimization).
 
-All hyper-parameters' searching space are set by empirical knowledge. You may play with it own your own.
+All hyper-parameters' searching space are set by empirical knowledge. You may play with it on your own.
+For the use of the tuning code, you can refer to the toy example in ==example.py==.
 
 If you find this tool is usefull, we will be glad if you can cite us in your paper :-)
 > AutoQual: task-oriented structural vibration sensing quality assessment leveraging co-located mobile sensing context  (https://link.springer.com/article/10.1007/s42486-021-00073-3)
