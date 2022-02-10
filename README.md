@@ -1,13 +1,14 @@
-# Common machine learning models' hyperparameter tuning
+# Common machine learning classification models' hyperparameter tuning
 
-This repo is for a collection of hyper-parameter tuning for "common" machine learning models, including:
+This repo is for a collection of hyper-parameter tuning for "common" machine learning classification models, including:
 * Linear SVM (Grid Search),
 * RBF-Kernel SVM (Grid Search),
 * Radom Forest (Bayesian Optimization),
 * XG Boost(Bayesian Optimization),
 * Logistic Regression (Grid Search),
 * k-Nearest Neighbors (Grid Search),
-* Extra Trees (Bayesian Optimization).
+* Extra Trees (Bayesian Optimization),
+* Gaussian Process Classifier (Grid Search),
 
 All hyper-parameters' searching space are set by empirical knowledge. You may play with it on your own.
 For the use of the tuning code, you can refer to the toy example in ***example.py***.
