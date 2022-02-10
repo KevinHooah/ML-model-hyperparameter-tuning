@@ -271,3 +271,26 @@ def etTuning(xTr, yTr, xTe, yTe, clfet, cvMethod):
 
     best_et.fit(xTr, yTr)
     return (best_et, best_et.score(xTe,yTe))
+
+def gpcTuning(xTr, yTr, xTe, yTe, clfgpc, cvMethod):
+    '''
+    This code is for Gaussian Process Classification tuning.
+    '''
+    gp_gpc = [
+            {"kernel": [RBF(l) for l in np.logspace(-1, 1, 2)]}, 
+            {"kernel": [DotProduct(sigma_0) for sigma_0 in np.logspace(-1, 1, 2)]},
+            {'kernel': ['linear']}
+            ]
+
+    gd_sr_gpc = GridSearchCV(estimator=clfgpc,
+	                    param_grid=gp_gpc,
+	                    scoring="f1_macro",
+	                    cv=cvMethod,
+	                    n_jobs=6,
+	                    refit=True,
+	                    verbose=0)
+    gd_sr_gpc.fit(xTr, yTr)
+    best_gpc = gd_sr_gpc.best_estimator_
+    print(best_gpc.score(xTe,yTe))
+
+    return (best_gpc, best_gpc.score(xTe,yTe))
